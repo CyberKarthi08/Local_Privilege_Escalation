@@ -6,7 +6,13 @@ class main_privilege_escalation():
         pass
 
     def check_operating_system():
-        print("Linux Local Privilege Escalation")
+        print('''
+            
+            |######################################|
+            |   Linux Local Privilege Escalation   |
+            |######################################| 
+              
+              ''')
 
 
 
