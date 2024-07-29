@@ -6,11 +6,8 @@ class main_privilege_escalation():
         pass
 
     def check_operating_system():
-        print("")
-
-
+        print("Linux Local Privilege Escalation")
 
 
 
 if __name__ == "__main__":
-
