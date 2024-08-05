@@ -22,6 +22,6 @@ def colorize_text(text):
     return ' '.join(colored_words)
 
 if __name__ == "__main__":
-    text = "This is a sample text to demonstrate colored words."
+    text = "I am hacker of karthikeyan"
     colored_text = colorize_text(text)
     print(colored_text)
