@@ -1,4 +1,4 @@
-import linux_user_base
+import Linux_LPE
 
 class privilege_escalation():
 
@@ -7,21 +7,28 @@ class privilege_escalation():
         self.linux_01 = None
         self.windows_02 = None
 
-    def check_operting_system():
+    def startup_privilege():
         # TODO #1 --> If you want to checkout which operating system
         print("\nTODO : linux Local Privilege Eacalation\n")
 
-class master_excution(linux_user_base.LinuxUserBase):
+
+class master_excution():
     def __init__(self):
         super().__init__()
+
+    def kernel_excution():
+        Linux_LPE.KernelBase.kernel_info()   
     
-    def main_excution():
-        linux_user_base.LinuxUserBase.check_user_privilege()
+    def user_excution():
+        Linux_LPE.UserBase.check_user_privilege()
+        Linux_LPE.UserBase.kernel_info()
+        
 
 
 if __name__ == "__main__":
-    privilege_escalation.check_operting_system()
-    master_excution.main_excution()
+
+    privilege_escalation.startup_privilege()
+    master_excution.user_excution()
     
 
     

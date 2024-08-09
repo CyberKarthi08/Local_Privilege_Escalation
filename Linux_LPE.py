@@ -1,4 +1,5 @@
 import os 
+import re
 import pwd
 import logging
 import platform
@@ -17,12 +18,11 @@ class UserBase():
         that_user_name = pwd.getpwuid(that_uid).pw_name
         print("UID : {0}" . format(that_uid))
         print("USER_NAME : {0}" . format(that_user_name))
-
-class KernelBase():
-
-    def __init__(self) -> None:
-        pass
-
+    
     def kernel_info():
-        kernel_version = platform.release
-        print(f"Kernel Version  : {kernel_version}") 
+        kernel_version = platform.uname()
+        for demo in kernel_version:
+            for demo in range(0,5,1):
+                print(demo)
+                 
+                
