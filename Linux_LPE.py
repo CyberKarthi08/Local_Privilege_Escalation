@@ -20,9 +20,9 @@ class UserBase():
         print("USER_NAME : {0}" . format(that_user_name))
     
     def kernel_info():
-        kernel_version = platform.uname()
-        for demo in kernel_version:
-            for demo in range(0,5,1):
-                print(demo)
+        kernel_version = [platform.uname()]
+        print(kernel_version)
+        print(type(kernel_version))
+        
                  
                 
